@@ -1,0 +1,7 @@
+rootProject.name = 'cs474.hw2'
+include 'annotations'
+include 'annotations-proc'
+include 'implementation1'
+include 'implementation2'
+include 'implementation3'
+

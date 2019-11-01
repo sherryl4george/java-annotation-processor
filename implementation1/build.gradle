@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(':annotations')
+    annotationProcessor(project(':annotations-proc'))
+}
+
+// Uncommnet these if you need to run this individually
+//apply plugin: 'application'
+//mainClassName = "implementation.Driver"
+//
+//run{
+//    standardInput = System.in
+//}
