@@ -13,13 +13,19 @@ The project is built using Java with Gradle. Gradle commands will work. The proj
 
 Clone this repository to your local desktop. Make sure the cloned folder has file read/write access.
 
+**Note:** In case the gradle clean fails with an error saying unable to delete files, run the below
+command
+```
+./gradlew --stop
+```
+This error is due to gradle daemon holding locks even after the program has quit.
 ### Build
 
 To build the project from Unix command line
 
 For Linux run the following from project root
 ```
-./gradlew clean && ./gradlew build
+./gradlew build
 ```
 
 Running then above command runs the annoation processor and processes the annotations for all the implementations
@@ -29,16 +35,17 @@ in the project
 
 For Linux run the following from project root
 ```
-./gradlew clean && ./gradlew test
+./gradlew test
 ```
 
 ## Running the application
 
 For Linux run the following from project root
 ```
-./gradlew clean && ./gradlew run
+./gradlew run
 ```
 Running this will run the program (not the annotation processor) and shows output in the console
+
 
 ### Report Link [here](report/report.pdf)
 
