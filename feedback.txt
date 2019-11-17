@@ -1,0 +1,11 @@
+Hi Sherryl,
+
+Thanks for your submission, here are a few comments:
+
+1. Nice implementation of verifier for the iterator design pattern.
+2. Good documentation and comments.
+
+Grade - 7% 
+
+Regards,
+Mark and Aditya
